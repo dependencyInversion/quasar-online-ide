@@ -2,20 +2,21 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: .
-      target: development
-    environment:
-      - NODE_ENV=development
+    image: node:latest
+    container_name: quasar-dev-container
+    tmpfs:
+      - /app/.local/share/code-server
+    volumes:
+      - ./online-ide:/app
+    working_dir: /app
     ports:
       - "8080:8080"
-    working_dir: /app/online-ide
-    command: ["quasar", "dev", "-p", "8080"]
+    command: /bin/sh -c "npm install -g @quasar/cli && npm install && quasar dev -p 8080"
 
   code-server:
     image: codercom/code-server:latest
     volumes:
-      - .:/home/coder/project
+      - ./online-ide:/home/coder
       - /app/node_modules
     ports:
       - "8081:8081" # Expose code-server on port 8081
