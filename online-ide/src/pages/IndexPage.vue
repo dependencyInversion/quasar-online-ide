@@ -1,7 +1,7 @@
 <template>
   <div style="height: 100vh; display: flex; flex-direction: column;">
     <q-page class="" style="flex-grow: 1;">
-      <q-row class="row justify-center items-stretch" style="flex-grow: 1;">
+      <div class="row justify-center items-stretch" style="flex-grow: 1; height: 100vh;">
         <div class="q-pa-md col-4" style="flex-grow: 1;">
           <q-list bordered class="rounded-borders">
             <q-expansion-item
@@ -31,7 +31,7 @@
         <div class="col-8" style="flex-grow: 1;">
           <IframeEmbed url="http://localhost:8081/?folder=/home/coder" />
         </div>
-      </q-row>
+      </div>
     </q-page>
   </div>
 </template>
