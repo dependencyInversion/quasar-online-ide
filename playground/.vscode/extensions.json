@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring",
+        "mechatroner.rainbow-csv"
+    ],
+    "unwantedRecommendations": [
+        // List any extensions you recommend users not to install
+    ]
+}
