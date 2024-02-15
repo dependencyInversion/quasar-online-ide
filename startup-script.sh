@@ -12,6 +12,18 @@ if [ ! -d "./playground" ]; then \
     && git pull origin feature/add-proper-dev-container; \
 fi
 
+# Set the extensions directory
+EXTENSIONS_DIR="/home/developer/.local/share/code-server/extensions"
+
+# Install extensions
+code-server --install-extension ms-python.python --extensions-dir $EXTENSIONS_DIR
+code-server --install-extension ms-toolsai.jupyter --extensions-dir $EXTENSIONS_DIR
+code-server --install-extension ms-python.vscode-pylance --extensions-dir $EXTENSIONS_DIR
+code-server --install-extension njpwerner.autodocstring --extensions-dir $EXTENSIONS_DIR
+code-server --install-extension mechatroner.rainbow-csv --extensions-dir $EXTENSIONS_DIR
+
+
+
 poetry install
 
 # Start code-server
