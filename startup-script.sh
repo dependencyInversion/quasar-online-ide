@@ -23,7 +23,9 @@ code-server --install-extension njpwerner.autodocstring --extensions-dir $EXTENS
 code-server --install-extension mechatroner.rainbow-csv --extensions-dir $EXTENSIONS_DIR
 
 
-
+cd playground
+poetry config virtualenvs.in-project false
+poetry config virtualenvs.path /home/developer/.venvs
 poetry install
 
 # Start code-server
