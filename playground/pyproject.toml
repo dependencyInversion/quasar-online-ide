@@ -11,6 +11,7 @@ scikit-learn = "^1.4.0"
 matplotlib = "^3.8.3"
 ipython = "^8.21.0"
 ipykernel = "^6.29.2"
+jupyter = "^1.0.0"
 
 
 [build-system]
