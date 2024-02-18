@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.12"
 scikit-learn = "^1.4.0"
 matplotlib = "^3.8.3"
+ipython = "^8.21.0"
 
 
 [build-system]
