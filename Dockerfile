@@ -43,3 +43,5 @@ WORKDIR /home/developer
 
 # Expose port 8081
 EXPOSE 8081
+
+EXPOSE 8888
