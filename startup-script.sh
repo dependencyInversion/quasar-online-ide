@@ -27,6 +27,7 @@ cd /home/developer/playground/playground
 poetry config virtualenvs.in-project false
 poetry config virtualenvs.path /home/developer/.venvs
 poetry install
+python -m ipykernel install --user --name="my-playground"
 
 # Start code-server
 code-server --bind-addr 0.0.0.0:8081 --auth none
