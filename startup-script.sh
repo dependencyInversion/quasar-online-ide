@@ -31,3 +31,5 @@ python -m ipykernel install --user --name="my-playground"
 
 # Start code-server
 code-server --bind-addr 0.0.0.0:8081 --auth none
+
+nohup jupyter notebook > jupyter.log 2>&1 &
