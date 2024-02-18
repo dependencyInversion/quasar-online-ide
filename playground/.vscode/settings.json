@@ -1,5 +1,5 @@
 {
-    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.defaultProfile.linux": "bash",
     "python.defaultInterpreterPath": "/home/developer/playground/playground/.venv/bin/python",
     "git.ignoreSubmodules": true,
     "python.analysis.diagnosticMode": "workspace",
