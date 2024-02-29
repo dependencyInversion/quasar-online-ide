@@ -23,5 +23,5 @@ docker compose down
 ![simplified illustration of how components work together](./assets/Abb_1.png)
 
 ## Show Case
-
+![show case](./assets/show_case_v2.gif)
 ![show case](./assets/show_case.gif)
