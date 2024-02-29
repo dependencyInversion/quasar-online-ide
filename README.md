@@ -18,3 +18,10 @@ docker compose up app code-server -d
 ```bash
 docker compose down
 ```
+
+## Infrastructure
+![simplified illustration of how components work together](./assets/Abb_1.png)
+
+## Show Case
+
+![show case](./assets/show_case.gif)

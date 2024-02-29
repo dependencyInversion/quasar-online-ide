@@ -8,7 +8,7 @@
           position="top-left"
           :style="{ position: 'absolute', zIndex: '999' }"
         />
-        <IframeEmbed url="http://localhost:8081/?folder=/home/coder" />
+        <IframeEmbed url="http://localhost:8081/?folder=/home/developer/playground" />
       </q-page>
     </q-page-container>
     <q-drawer

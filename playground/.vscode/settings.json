@@ -1,0 +1,12 @@
+{
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "python.defaultInterpreterPath": "/home/developer/playground/playground/.venv/bin/python",
+    "git.ignoreSubmodules": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    // "workbench.colorTheme": "One Dark Pro",
+    "python.analysis.completeFunctionParens": true,
+    "editor.formatOnSave": true
+}
