@@ -13,15 +13,16 @@ services:
       - "8080:8080"
     command: /bin/sh -c "npm install -g @quasar/cli && npm install && quasar dev -p 8080"
 
-  code-server:
-    image: codercom/code-server:latest
-    volumes:
-      - ./online-ide:/home/coder
-      - /app/node_modules
+  pyhton-playground:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "8081:8081" # Expose code-server on port 8081
+      - "8081:8081"
+      - "8888:8888"
+    volumes:
+      - ./data:/home/developer
     environment:
-      - PASSWORD=your-password-here # Set a password for access or use --auth none to disable authentication
-      - GIT_USER=your-name
-      - GIT_EMAIL=your-email@example.com
-    command: ["--auth", "none", "--bind-addr", "0.0.0.0:8081", "--disable-telemetry"]
+      CODE_SERVER_TELEMETRY_ENABLED: "false"
+    command: ["/usr/local/bin/startup-script.sh"]
+    
